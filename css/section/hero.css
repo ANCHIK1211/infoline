@@ -1,0 +1,117 @@
+.hero {
+    padding-top: 132px;
+    background-image: url(../../img/background__hero.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: #2C3B45;
+    border-bottom: 50px solid #1E92E7;
+    z-index: 1;
+    position: relative;
+}
+
+.hero__container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero__img-wrap{
+
+}
+
+.hero__content {
+    padding-top: 7.8%;
+    flex-basis: 51%;
+    padding-right: 15px;
+    margin-bottom: 16.9%;
+}
+
+.hero__adress {}
+
+.location {}
+
+.hero__location {
+    /*36px:602px*/
+    margin-bottom: 6%;
+    display: flex;
+    align-items: center;
+}
+
+.location__icon {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+
+.location__text {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #1E92E7;
+}
+
+.hero__title {
+    margin-bottom: 7.8%;
+}
+
+.title {
+    max-width: 488px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 56px;
+    color: #FFFFFF;
+}
+
+.hero__btn {
+    min-width: 244px;
+}
+
+.hero__img-wrap {
+    position: relative;
+    border-radius: 5px 0px 0px 0px;
+    flex: 1;
+}
+
+.hero__img-wrap::before{
+    content: "";
+    display: block;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+    width: 100vw;
+    border-radius: inherit;
+    background-image: url(../../img/Небо.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.hero__img-wrap::after{
+    content: "";
+    display: block;
+    background-color: #404F59;
+    width: 100vw;
+    height: 100%;
+    position: absolute;
+    left: 30px;
+    top: -15px;
+    z-index: -2;
+    border-radius: inherit;
+}
+
+.hero__img {
+    height: 95%;
+    object-fit: contain;
+    object-position: center bottom;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
